@@ -1,7 +1,6 @@
 import request from '@/utils/request';
-import type { FileInfo } from '@/types/file';
 
-export const uploadFile = (file: File): Promise<FileInfo> => {
+export const uploadFile = (file: File): Promise<{ url: string }> => {
   const formData = new FormData();
   formData.append('file', file);
 

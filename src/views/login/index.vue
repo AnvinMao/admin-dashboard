@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { reactive, ref } from 'vue';
-import type { LoginData } from '@/types/admin';
+import type { LoginData } from '@/api/admin';
 import { ElMessage, type FormInstance, type FormRules } from 'element-plus';
 import { useAdminStore } from '@/stores/admin';
 import { useRoute, useRouter, type LocationQuery, type LocationQueryValue } from 'vue-router';

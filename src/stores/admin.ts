@@ -1,7 +1,7 @@
 import { ref } from 'vue'
 import { defineStore } from 'pinia'
 import { adminLogin, adminLogout, getAccount } from '@/api/admin';
-import type { Admin, LoginData } from '@/types/admin';
+import type { Admin, LoginData } from '@/api/admin';
 import LocalStore from '@/utils/storage';
 
 export const useAdminStore = defineStore('admin', () => {

@@ -8,7 +8,7 @@ import LocalStore from './storage';
 import { ElMessageBox } from 'element-plus';
 
 const service: AxiosInstance = axios.create({
-  baseURL: import.meta.env.VITE_BASE_API,
+  baseURL: import.meta.env.VITE_APP_BASE_API,
   timeout: 30000,
 })
 

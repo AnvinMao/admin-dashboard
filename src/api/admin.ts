@@ -1,5 +1,15 @@
 import { http } from '@/utils/request';
-import type { Admin, LoginData } from '@/types/admin';
+
+export interface LoginData {
+  account: string;
+  password: string;
+}
+
+export interface Admin {
+  id: number;
+  account: string;
+  role: string;
+}
 
 export function adminLogin(data: LoginData) {
   return http.post<{ token: string }>('/login', data);

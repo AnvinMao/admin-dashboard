@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { onMounted, reactive, ref } from 'vue';
-import type { User, UserQuery } from '@/types/user';
+import type { User, UserQuery } from '@/api/user';
 import { ElMessageBox, type FormInstance } from 'element-plus';
 import { labelPosition } from '@/utils';
 import Pagination from '@/components/Pagination/index.vue';

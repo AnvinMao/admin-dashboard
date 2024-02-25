@@ -3,9 +3,15 @@ import { onMounted, reactive, ref } from 'vue';
 import { useRoute } from 'vue-router';
 import { labelPosition } from '@/utils';
 import type { FormInstance, FormRules } from 'element-plus';
-import type { Article } from '@/types/article';
 import SingleUploadVue from '@/components/Upload/SingleUpload.vue';
 import Editor from '@/components/Editor/index.vue';
+
+interface Article {
+  id: number;
+  title: string;
+  picture: string;
+  content: string;
+}
 
 const loading = ref<boolean>(false);
 const props = defineProps<{ edit: boolean }>();
